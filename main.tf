@@ -1,6 +1,6 @@
 module "newrelic" {
   source = "./modules/newrelic"
-  count  = var.newrelic != null ? 1 : 0
+  
 
   cpu_utiliztion    = var.newrelic["cpu_utiliztion"]
   memory_utiliztion = var.newrelic["memory_utiliztion"]
@@ -16,4 +16,5 @@ module "newrelic" {
   api_key           = var.newrelic["api_key"]
   account_id        = var.newrelic["account_id"]
 
+  
 }

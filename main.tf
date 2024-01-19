@@ -1,7 +1,7 @@
 module "newrelic" {
   source = "./modules/newrelic"
   cpu_utiliztion    = var.cpu_utiliztion
-  memory_utiliztion = var.memory_utiliztion"]
+  memory_utiliztion = var.memory_utiliztion
   ecs_pending       = var.ecs_pending
   cpu_warning       = var.cpu_warning
   cpu_critical      = var.cpu_critical
@@ -13,6 +13,4 @@ module "newrelic" {
   newrelic_region   = var.newrelic_region
   api_key           = var.api_key
   account_id        = var.account_id
-
-
 }

@@ -51,6 +51,7 @@ variable "newrelic_region" {
 variable "api_key" {
   type        = string
   description = "api_key name"
+}
 
 variable "account_id" {
   type        = number
